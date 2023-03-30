@@ -1,7 +1,6 @@
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from "react-native";
 import react, { useState } from "react";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
-import { Image } from "react-native";
 
 const SignUp = () => {
     const [name, setName] = useState("");
@@ -21,7 +20,7 @@ const SignUp = () => {
         <KeyboardAwareScrollView contentContainerStyle={styles.container}>
             <View style={{ marginVertical: 100 }} >
                 <View style={styles.imageContainer}>
-                    <Image source={require('../assets/icon.png')} style={styles.imageStyles} />
+                    <Image source={require("../assets/icon.png")} style={styles.imageStyles} />
                 </View>
                 <Text style={styles.signupText}>Sign Up</Text>
                 <View style={{ marginHorizontal: 24 }}>
